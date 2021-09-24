@@ -1,5 +1,4 @@
 ## from https://distillery.rbind.io/posts/2021-03-18-use-github-actions-with-r-markdown-and-distill/
-
 on:
   push:
   branches: master
