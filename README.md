@@ -11,11 +11,14 @@ far I have come across.
     Distillery](https://distillery.rbind.io/posts/2021-03-18-use-github-actions-with-r-markdown-and-distill/) -
     Use GitHub actions with R Markdown and Distill
 
+-   [Travis Gerke
+    presentation](https://tgerke.github.io/github-actions-with-r/#1)
+
 ------------------------------------------------------------------------
 
 ### Testing
 
-2021-09-24 08:29:11
+2021-09-24 08:59:41
 
 ``` r
 dat=rnorm(100)
