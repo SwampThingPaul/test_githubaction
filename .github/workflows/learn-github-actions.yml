@@ -1,12 +1,12 @@
 ## create an example workflow
 ## add .github/workflows
-## edited for windows-latest version
+## tried runs-on: windows-latest got error
 
 name: learn-github-actions
 on: [push]
 jobs:
   check-bats-version:
-  runs-on: windows-latest # ubuntu-latest
+  runs-on: ubuntu-latest
 steps:
   - uses: actions/checkout@v2
 - uses: actions/setup-node@v2
