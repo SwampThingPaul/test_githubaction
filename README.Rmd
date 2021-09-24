@@ -11,3 +11,17 @@ knitr::opts_chunk$set(echo = TRUE)
 In my attempt to lear github actions here are some of the resources so far I have come across. 
 
 * [doc.github.com](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions#viewing-the-jobs-activity) - Understanding GitHub Actions
+
+
+
+***
+### Testing
+
+`r Sys.time()`
+
+```{r}
+dat=rnorm(100)
+
+plot(dat)
+
+```
