@@ -10,8 +10,6 @@ steps:
   - uses: r-lib/actions/setup-pandoc@master
   - name: Install dependencies
     run: install.packages("rmarkdown")
-    shell: Rscript {0}
-
   - name: Render Site
     run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
   - name: Commit results
