@@ -13,8 +13,7 @@ steps:
   - uses: r-lib/actions/setup-r@master
   - uses: r-lib/actions/setup-pandoc@master
   - name: Install dependencies
-    run: |
-      install.packages("rmarkdown")
+    run: install.packages("rmarkdown")
     shell: Rscript {0}
 
   - name: Render Site
