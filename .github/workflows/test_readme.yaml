@@ -18,6 +18,6 @@ jobs:
         run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
       - name: Commit results
         run: |
-          git add -A
+          git pull origin || echo "No changes to commit"
           git commit -m 'update readme' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
