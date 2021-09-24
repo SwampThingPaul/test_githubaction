@@ -18,10 +18,15 @@ far I have come across.
 
 ### Testing
 
-2021-09-24 13:21:28
+2021-09-24 13:32:14
 
     dat=rnorm(100)
 
     plot(dat)
 
 ![](README_files/figure-markdown_strict/unnamed-chunk-1-1.png)
+
+------------------------------------------------------------------------
+
+So far `.github/workflow/test_readme.yaml` works to render this readme
+on push
