@@ -1,5 +1,5 @@
-
-## Learning GitHub actions
+Learning GitHub actions
+-----------------------
 
 In my attempt to lear github actions here are some of the resources so
 far I have come across.
@@ -18,12 +18,10 @@ far I have come across.
 
 ### Testing
 
-2021-09-24 08:59:41
+2021-09-24 13:21:28
 
-``` r
-dat=rnorm(100)
+    dat=rnorm(100)
 
-plot(dat)
-```
+    plot(dat)
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](README_files/figure-markdown_strict/unnamed-chunk-1-1.png)
