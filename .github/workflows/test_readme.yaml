@@ -1,6 +1,9 @@
 ## from https://distillery.rbind.io/posts/2021-03-18-use-github-actions-with-r-markdown-and-distill/
 name: Render & Deploy Site
-on: [push]
+# on: [push]
+on:
+  schedule:
+    - cron:  '45 9 * * 5'
 jobs:
   render:
     name: Render README
