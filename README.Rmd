@@ -20,7 +20,7 @@ In my attempt to lear github actions here are some of the resources so far I hav
 ***
 ### Testing
 
-`r Sys.time()`
+`r paste(Sys.time(),Sys.timezone())`
 
 ```{r}
 dat=rnorm(100)
