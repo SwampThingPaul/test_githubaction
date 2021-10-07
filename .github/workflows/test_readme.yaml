@@ -19,7 +19,8 @@ jobs:
         run: Rscript -e 'print(123)'
       - name: Install rmarkdown
         run: |
-          install.packages("rmarkdown")
+          install.packages(c("rmarkdown","remotes"))
+          remotes::install_github("SwampThingPaul/AnalystHelper")
         shell: Rscript {0}
       - name: Render Site
         run: |
