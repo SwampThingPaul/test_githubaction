@@ -22,7 +22,9 @@ jobs:
           install.packages("rmarkdown")
         shell: Rscript {0}
       - name: Render Site
-        run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
+        run: |
+          rmarkdown::render("README.Rmd", output_format = "md_document")
+        shell: Rscript {0}  
       - name: Commit results
         run: |
           git add -A 
