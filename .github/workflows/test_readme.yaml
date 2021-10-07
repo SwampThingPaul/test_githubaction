@@ -18,7 +18,9 @@ jobs:
       - name: sample
         run: Rscript -e 'print(123)'
       - name: Install rmarkdown
-        run: Rscript -e 'install.packages("rmarkdown")'
+        run: |
+          install.packages("rmarkdown")
+        shell: Rscript {0}
       - name: Render Site
         run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
       - name: Commit results
