@@ -15,7 +15,7 @@ jobs:
         with:
           r-version: 'release'
       - name: sample
-        run: Rscript -e 'print("hello")'
+        run: Rscript -e 'print(123)'
       - name: Install rmarkdown
         run: Rscript -e 'install.packages("rmarkdown")'
       - uses: r-lib/actions/setup-pandoc@v1
