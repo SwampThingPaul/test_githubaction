@@ -14,11 +14,11 @@ jobs:
       - uses: r-lib/actions/setup-r@master
         with:
           r-version: 'release'
+      - uses: r-lib/actions/setup-pandoc@v1
       - name: sample
         run: Rscript -e 'print(123)'
       - name: Install rmarkdown
-        run: Rscript -e 'install.packages(rmarkdown)'
-      - uses: r-lib/actions/setup-pandoc@v1
+        run: Rscript -e 'install.packages("rmarkdown")'
       - name: Render Site
         run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
       - name: Commit results
